@@ -109,8 +109,8 @@ class FOCUS_DETRCriterion(TwoStageCriterion):
             losses["loss_class_dn"] = torch.as_tensor(0.0).to("cuda")
 
         for i in range(aux_num):
-            # dn aux loss
-            l_dict = {}
+            # dn aux loss hello
+            l_dict = {} 
             if dn_metas and "output_known_lbs_bboxes" in dn_metas:
                 output_known_lbs_bboxes_aux = output_known_lbs_bboxes["aux_outputs"][i]
                 for loss in self.losses:
